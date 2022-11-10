@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://img.freepik.com/premium-vector/evil-logo-emblem_74829-57.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="font-8xl font-extrabold text-center">
+    <script>
+    function greaterAverage()
+    {
+        let userNumber=[];
+        let size = +prompt("Enter the size--> ");
+        let number;
+        let sum=0;
+        let avg;
+        for(let i=0; i<size ;i++)
+        {
+           number = +prompt("Enter the array elements--> ");
+           userNumber.push(number);
+           sum += userNumber[i];
+           
+        }
+        avg = sum/size;
+        for(let i=0; i<size; i++)
+        {        
+              if(userNumber[i]>avg)
+        {
+            document.write(userNumber[i]+" ");
+        }
+    }
+         document.write('The avg of the given array is--> '+ avg);
+    }
+
+    greaterAverage();
+    </script>
+    </div>
+    </body>
+    </html>

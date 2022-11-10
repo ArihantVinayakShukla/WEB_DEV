@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://img.freepik.com/premium-vector/evil-logo-emblem_74829-57.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="font-5xl font-extrabold text-center">
+    <script>
+        let userNumber = [];
+        let size=5
+        let number;
+        for(let i=0; i<size; i++)
+        {
+          number= +prompt('Enter the number--> ');
+          userNumber.push(number);
+            if(userNumber[0]<userNumber[i])
+            {
+                userNumber[0]= userNumber[i];
+            }
+        }
+        document.write('The greatest number in the array is--> '+ userNumber[0]);
+    </script>
+    </div>
+  </body>
+</html>
