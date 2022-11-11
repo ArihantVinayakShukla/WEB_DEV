@@ -13,18 +13,21 @@
   <body>
     <div class="mt-2 font-8xl font-extrabold text-center bg-slate-gray-500">
       <script>
-        function table(num)
+        function table(event)
         {
-            for (let i=1; i<10; i++)
-            {
-                document.write(`<div class="flex flex-col">${num} X ${i} = ${num*i}</div>`)
-            }
-        }
+          let num = event.target.value;
+          const myDiv = document.getElementById('message');
+              
 
-        let num = +prompt('Enter the number that you want table of--> ');
-        
-        table(num);
+            for (let i=1; i<=10; i++)
+            {
+              myDiv.innerHTML+=`<div class="flex flex-col mt-2 ">${num} X ${i} = ${num*i}</div>`
+            }
+              
+        }
       </script>
+      <input class="border rounded-md" type="number" placeholder="enter the number you want table of" onchange="table(event)" />
+      <div id="message"></div>
     </div>
   </body>
 </html>
