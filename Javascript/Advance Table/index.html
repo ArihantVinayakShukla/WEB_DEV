@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVS</title>
+    <link rel="icon" href="https://img.freepik.com/premium-vector/evil-logo-emblem_74829-57.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="table.js"></script>
+  </head>
+  <body class="flex flex-col items-center bg-slate-500">
+    <div class="flex flex-col gap-x-2 mt-12">
+        <input type="number" id="num" placeholder="Number you want table of"  class="rounded-md border border-black text-center p-2 bg-black text-white w-72/">
+        <div class="flex gap-x-2 mt-2">
+            <input type="number" id="first" placeholder="from where?" class="rounded-md border border-stone-50 text-center p-2 bg-black text-white"/>
+            <p>&#10005;</p>
+            <input type="number" id="second" placeholder="to where?"  class="rounded-md border border-stone-50 text-center p-2 bg-black text-white"/>
+        </div>
+        <button class="bg-red-500 rounded-md p-2 border border-black w-full font-bold mt-2"  onclick = "table()" >Find the Table</button>
+    </div>
+    <div id="outcome" class="text-center justify-center w-52 text-3xl font-extrabold mt-16 text-black bg-gradient-to-r mx-96 from-red-600 via-gray-400 to-blue-600 rounded-lg"></div>
+
+  </body>
